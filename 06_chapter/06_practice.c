@@ -62,3 +62,85 @@
 //     return 0;
 // }
 
+
+//class program
+// #include <stdio.h>
+
+// int main(){
+//     int enter_choice, a, b;
+//     int choice, result_addition, result_multi; float result_percentage_sub1, result_percentage_sub2, result_percentage_sub3;
+//     float result_mod, total_percent;
+//     int sub_1, sub_2, sub_3, total_marks;
+//     printf("enter 1 for arithmetic and 2 for percentage calculation: ");
+//     scanf("%d", &enter_choice);
+
+//     if(enter_choice == 1){
+//         printf("enter 4 for addition\nenter 5 for multiplication\nenter 6 for modulus\n");
+//         scanf("%d", &choice);
+//         if(choice == 4){
+//             printf("enter a: ");
+//             scanf("%d", &a);
+//             printf("enter b:");
+//             scanf("%d", &b);
+//             result_addition = a + b;
+//             printf("the result of addition is: %d\n", result_addition);
+//         }
+//         else if(choice == 5){
+//             printf("enter a: ");
+//             scanf("%d", &a);
+//             printf("enter b:");
+//             scanf("%d", &b);
+//             result_multi = a * b;
+//             printf("the result of multiplication is: %d\n", result_multi);
+//         }
+//         else{
+//             printf("enter a: ");
+//             scanf("%d", &a);
+//             printf("enter b:");
+//             scanf("%d", &b);
+//             result_mod = a%b;
+//             printf("the result of mod is: %f\n", result_mod);
+//         }
+//     }
+//     else if(enter_choice == 2){
+//         printf("enter marks in 3 subjects\n");
+//         printf("marks sub_1:");
+//         scanf("%d", &sub_1);
+//         printf("marks sub_2:");
+//         scanf("%d", &sub_2);
+//         printf("marks sub_3:");
+//         scanf("%d", &sub_3);
+//         total_marks = sub_1+sub_2+sub_3;
+//         result_percentage_sub1 = (sub_1/50.00)*100.00;
+//         result_percentage_sub2 = (sub_2/50.00)*100.00;
+//         result_percentage_sub3 = (sub_3/50.00)*100.00;
+//         total_percent = (total_marks/150.00)*100.00;
+//         printf("percentage in subject 1: %f\n",result_percentage_sub1);
+//         printf("percentage in subject 2: %f\n",result_percentage_sub2);
+//         printf("percentage in subject 3: %f\n",result_percentage_sub3);
+//         printf("total percentage: %f\n", total_percent);
+//     }
+//     return 0;
+// }
+
+
+// write a program to change the value of a variable to ten times its current value
+// by call by value and verify that it does not change the value of said variable
+// #include <stdio.h>
+
+// int ten_times(int a) {
+//     return a * 10;  
+// }
+
+// int main() {
+//     int n;
+//     printf("Enter n: ");
+//     scanf("%d", &n);
+//     int result = ten_times(n);
+//     printf("value of n: %d\n", n);  
+//     printf("Ten times n: %d\n", result);  
+//     return 0;
+// }
+
+
+

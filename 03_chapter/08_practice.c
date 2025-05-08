@@ -1,82 +1,82 @@
 // find output of this code
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int a = 10;
-//     if(a == 11){
-//         printf("I am 11");
-//     }
-//     else{
-//         printf("I am not 11");
-//     }
-//     return 0;
-// } // out is 'I am not 11'
+int main(){
+    int a = 10;
+    if(a == 11){
+        printf("I am 11");
+    }
+    else{
+        printf("I am not 11");
+    }
+    return 0;
+} // out is 'I am not 11'
 
 // determine whether a student is passed or failed. he/she requires overall 40% to pass and 
 // 33% in each subject to pass(3 subjects) 
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int total_marks, marks_sub1, marks_sub2, marks_sub3;
-//     printf("enter marks in subject 1: ");
-//     scanf("%d", &marks_sub1);
-//     printf("enter marks in subject 2: ");
-//     scanf("%d", &marks_sub2);
-//     printf("enter marks in subject 3: ");
-//     scanf("%d", &marks_sub3);
-//     if((marks_sub1+ marks_sub2 + marks_sub3)/3 >= 40 && marks_sub1 >= 33 && marks_sub2 >= 33 && marks_sub3 >= 33 ){
-//         printf("hey congrats! you are pass");
-//     }
-//     else{
-//         printf("you are fail");
-//     }
-//     return 0;
-// }
+int main(){
+    int total_marks, marks_sub1, marks_sub2, marks_sub3;
+    printf("enter marks in subject 1: ");
+    scanf("%d", &marks_sub1);
+    printf("enter marks in subject 2: ");
+    scanf("%d", &marks_sub2);
+    printf("enter marks in subject 3: ");
+    scanf("%d", &marks_sub3);
+    if((marks_sub1+ marks_sub2 + marks_sub3)/3 >= 40 && marks_sub1 >= 33 && marks_sub2 >= 33 && marks_sub3 >= 33 ){
+        printf("hey congrats! you are pass");
+    }
+    else{
+        printf("you are fail");
+    }
+    return 0;
+}
 
 // income tax paid by an employee on basis of their income 
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     float income;
-//     printf("enter tour annual income in lakhs: ");
-//     scanf("%f", &income);
-//     if(income >= 2.5 && income <= 5.0){
-//         printf("you have to pay 5 percent tax\n");
-//     }
-//     else if(income <= 10.0 && income > 5.0){
-//         printf("you have to pay 20 percent tax\n");
-//     }
-//     else if(income > 10.0){
-//         printf("you have to pay 30 percent tax\n");
-//     }
-//     else{
-//         printf("you have to pay 0 percent tax\n");
-//     }
-//     return 0;
-// }
+int main(){
+    float income;
+    printf("enter tour annual income in lakhs: ");
+    scanf("%f", &income);
+    if(income >= 2.5 && income <= 5.0){
+        printf("you have to pay 5 percent tax\n");
+    }
+    else if(income <= 10.0 && income > 5.0){
+        printf("you have to pay 20 percent tax\n");
+    }
+    else if(income > 10.0){
+        printf("you have to pay 30 percent tax\n");
+    }
+    else{
+        printf("you have to pay 0 percent tax\n");
+    }
+    return 0;
+}
 
 // checking leap year
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int year;
-//     printf("enter a year: ");
-//     scanf("%d", &year);
-//     if(year%4 == 0 && year%100 != 0){
-//         printf("entered year is leap year");
-//     }
-//     else if(year%400 == 0){
-//         printf("entered year is a leap year");
-//     }
-//     else{
-//         printf("entered year is not a leap year");
-//     }
-//     return 0;
-// }
+int main(){
+    int year;
+    printf("enter a year: ");
+    scanf("%d", &year);
+    if(year%4 == 0 && year%100 != 0){
+        printf("entered year is leap year");
+    }
+    else if(year%400 == 0){
+        printf("entered year is a leap year");
+    }
+    else{
+        printf("entered year is not a leap year");
+    }
+    return 0;
+}
 
 
 // ASCII table
@@ -117,46 +117,46 @@
 
 // to check character is lowercse or not
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     char ch;
-//     printf("enter any character:" );
-//     scanf("%c", &ch);
-//     if(ch <= 122 && ch >= 97){
-//         printf("entered alphabet is lowercase");
-//     }
-//     else{
-//         printf("entered alphabet is not lowercase");
-//     }
-//     return 0;
-// }
+int main(){
+    char ch;
+    printf("enter any character:" );
+    scanf("%c", &ch);
+    if(ch <= 122 && ch >= 97){
+        printf("entered alphabet is lowercase");
+    }
+    else{
+        printf("entered alphabet is not lowercase");
+    }
+    return 0;
+}
 
 // greatest out of four numbers
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int a; int b; int c; int d;
-//     printf("enter a:");
-//     scanf("%d", &a);
-//     printf("enter b:");
-//     scanf("%d", &b);
-//     printf("enter c:");
-//     scanf("%d", &c);
-//     printf("enter d:");
-//     scanf("%d", &d);
-//     if(a>b && a>c && a>d){
-//         printf("a is greatest out of four\n");
-//     }
-//     else if(b>a && b>c && b>d){
-//         printf("b is greatest out of four\n");
-//     }
-//     else if(c>a && c>b && c>d){
-//         printf("c is greatest out of four\n");
-//     }
-//     else if(d>a && d>c && d>b){
-//         printf("d is greatest out of four\n");
-//     }
-//     return 0;
-// }
+int main(){
+    int a; int b; int c; int d;
+    printf("enter a:");
+    scanf("%d", &a);
+    printf("enter b:");
+    scanf("%d", &b);
+    printf("enter c:");
+    scanf("%d", &c);
+    printf("enter d:");
+    scanf("%d", &d);
+    if(a>b && a>c && a>d){
+        printf("a is greatest out of four\n");
+    }
+    else if(b>a && b>c && b>d){
+        printf("b is greatest out of four\n");
+    }
+    else if(c>a && c>b && c>d){
+        printf("c is greatest out of four\n");
+    }
+    else if(d>a && d>c && d>b){
+        printf("d is greatest out of four\n");
+    }
+    return 0;
+}

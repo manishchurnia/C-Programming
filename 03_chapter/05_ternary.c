@@ -8,3 +8,5 @@ int main(){
     a > b ? printf("a is greater") : printf("b is greater");
     return 0;
 }
+
+// ?: is a ternery command

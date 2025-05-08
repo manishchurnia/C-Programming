@@ -5,8 +5,8 @@
 //     char* j = &a; // j is a pointer pointing to a(j is a character pointer)
 //     char f = 'w';
 //     printf("the address of a is: %p\n", &a); //we can also write %u here.
-//     printf("the address of a is: %p\n", j);
-//     printf("the address of f is: %p\n", &f);
+//     printf("the address of a is: %u \n", j);
+//     printf("the address of f is: %u\n", &f);
 
 //     printf("the value at address j is: %d\n", *j);  // Printing the value at the address stored in pointer 'j'
 //     printf("the value at address j is: %d\n", *(&a));

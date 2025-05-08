@@ -24,3 +24,17 @@ int main(){
     return 0;
 }
 
+// Associativity
+
+// postfix         P
+// unary           U
+// multiplicative  M
+// additive        A
+// shift           's
+// relational       R
+// equality         E
+// bitwise          B
+// logical          L
+// ternery          T
+// assingnment      A
+// comma            C

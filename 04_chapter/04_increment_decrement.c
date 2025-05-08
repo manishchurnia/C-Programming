@@ -17,3 +17,14 @@ int main(){
 
 // i++ prints i first and then increments i (Post increment operator)
 // ++i increments i first and then prints i (Pre increment operator)
+
+// #include <stdio.h>
+
+// int main(){
+//     int a = 45;
+//     ++a;
+//     printf("%d", a);
+//     a++;
+//     printf("%d", a);
+//     return 0;
+// }
