@@ -1,4 +1,4 @@
-// // 16.	Write a C program to count and print the sum of prime elements in an array.
+// // // 16.	Write a C program to count and print the sum of prime elements in an array.
 // #include <stdio.h>
 
 // int prime(int n){
@@ -65,121 +65,121 @@
 //     return 0;
 // }
 
-// // 7.	Write a C program to copy all elements from an array to another array.
+// 7.	Write a C program to copy all elements from an array to another array.
 
-// #include <stdio.h>
-// #include <string.h>
+#include <stdio.h>
+#include <string.h>
 
-// int main(){
-//     int arr1[100]; int arr2[100];
-//     int i, n;
+int main(){
+    int arr1[100]; int arr2[100];
+    int i, n;
 
-//     printf("enter number of elements: ");
-//     scanf("%d", &n);
+    printf("enter number of elements: ");
+    scanf("%d", &n);
 
-//     printf("Enter %d elements:\n", n);
-//     for(i=0; i<n; i++){
-//         printf("Element %d: ", i + 1);
-//         scanf("%d", &arr1[i]);
-//     }
+    printf("Enter %d elements:\n", n);
+    for(i=0; i<n; i++){
+        printf("Element %d: ", i + 1);
+        scanf("%d", &arr1[i]);
+    }
 
-//     // Understanding the Parameters in Your Code:
-//     // arr2: Destination array where the elements will be copied to.​
-//     // arr1: Source array from which the elements will be copied.​
-//     // n * sizeof(int): Total number of bytes to copy. Since n represents the number of int elements, multiplying by sizeof(int) calculates the total byte size of these elements.
-//     memcpy(arr2, arr1, n*sizeof(int));
+    // Understanding the Parameters in Your Code:
+    // arr2: Destination array where the elements will be copied to.​
+    // arr1: Source array from which the elements will be copied.​
+    // n * sizeof(int): Total number of bytes to copy. Since n represents the number of int elements, multiplying by sizeof(int) calculates the total byte size of these elements.
+    memcpy(arr2, arr1, n*sizeof(int));
 
-//     printf("copied elements in 2nd array is:\n");
-//     for(i=0; i<n; i++){
-//         printf("Element %d: ", i + 1);
-//         printf("%d\n", arr2[i]);
-//     }
-//     printf("\n");
-//     return 0;
-// }
+    printf("copied elements in 2nd array is:\n");
+    for(i=0; i<n; i++){
+        printf("Element %d: ", i + 1);
+        printf("%d\n", arr2[i]);
+    }
+    printf("\n");
+    return 0;
+}
 
-// // 1.	Write a C program to print all negative elements in an array.
+// 1.	Write a C program to print all negative elements in an array.
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int arr[100], i, n;
+int main(){
+    int arr[100], i, n;
 
-//     printf("enter number of elements: ");
-//     scanf("%d", &n);
+    printf("enter number of elements: ");
+    scanf("%d", &n);
 
-//     if (n <= 0 || n > 100) {
-//         printf("Invalid number of elements. Please enter a value between 1 and 100.\n");
-//         return 1; 
-//     }
+    if (n <= 0 || n > 100) {
+        printf("Invalid number of elements. Please enter a value between 1 and 100.\n");
+        return 1; 
+    }
 
-//     for(i=0; i<n; i++){
-//         scanf("%d", &arr[i]);
-//     }
+    for(i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
 
-//     // Print negative elements
-//     printf("Negative elements in the array are:\n");
-//     for(i=0; i<n; i++){
-//         if(arr[i]<0){
-//             printf("%d", arr[i]);
-//         }
-//     }
+    // Print negative elements
+    printf("Negative elements in the array are:\n");
+    for(i=0; i<n; i++){
+        if(arr[i]<0){
+            printf("%d", arr[i]);
+        }
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
-// // 2.	Write a C program to find sum of all array elements. 
+// 2.	Write a C program to find sum of all array elements. 
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int arr[100], i, n;
-//     printf("enter num of elements: ");
-//     scanf("%d", &n);
+int main(){
+    int arr[100], i, n;
+    printf("enter num of elements: ");
+    scanf("%d", &n);
 
-//     for(i=0; i<n; i++){
-//         scanf("%d", &arr[i]);
-//     }
-//     int sum = 0;
-//     for(i=0; i<n; i++){
-//         sum+=arr[i];
-//     }
-//     printf("%d", sum);
-//     return 0;
-// }
+    for(i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
+    int sum = 0;
+    for(i=0; i<n; i++){
+        sum+=arr[i];
+    }
+    printf("%d", sum);
+    return 0;
+}
 
-// // 3.	Write a C program to find maximum and minimum element in an array.
+// 3.	Write a C program to find maximum and minimum element in an array.
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int arr[100], i, n;
+int main(){
+    int arr[100], i, n;
 
-//     printf("enter number of elements: ");
-//     scanf("%d", &n);
+    printf("enter number of elements: ");
+    scanf("%d", &n);
     
-//     for(i=0; i<n; i++){
-//         scanf("%d", &arr[i]);
-//     }
+    for(i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
 
-//     // initialize max and min element in array
-//     int max = arr[0];
-//     int min = arr[0];
+    // initialize max and min element in array
+    int max = arr[0];
+    int min = arr[0];
     
-//     for(int i=0; i<n; i++){
-//         if(arr[i] > max){
-//             max = arr[i];
-//         }
-//         if(arr[i] < min){
-//             min = arr[i];
-//         }
-//     }
-//     printf("Maximum element: %d\n", max);
-//     printf("Minimum element: %d\n", min);
+    for(int i=0; i<n; i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+    printf("Maximum element: %d\n", max);
+    printf("Minimum element: %d\n", min);
     
 
-//     return 0;
-// }
+    return 0;
+}
 
 // // 4.	Write a C program to find second largest element in an array.
 
@@ -204,28 +204,28 @@
 
 // // 5.	Write a C program to count total number of even and odd elements in an array.
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main(){
-//     int arr[100], i, n;
+int main(){
+    int arr[100], i, n;
 
-//     printf("enter number of elements: ");
-//     scanf("%d", &n);
+    printf("enter number of elements: ");
+    scanf("%d", &n);
 
-//     for(i=0; i<n; i++){
-//         scanf("%d", &arr[i]);
-//     }
+    for(i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
 
-//     for(i=0; i<n; i++){
-//         if(arr[i]%2 == 0){
-//             printf("%d is a even number\n", arr[i]);
-//         }
-//         else{
-//             printf("%d is odd number\n", arr[i]);
-//         }
-//     }
-//     return 0;
-// }
+    for(i=0; i<n; i++){
+        if(arr[i]%2 == 0){
+            printf("%d is a even number\n", arr[i]);
+        }
+        else{
+            printf("%d is odd number\n", arr[i]);
+        }
+    }
+    return 0;
+}
 
 // // OR
 
@@ -282,37 +282,37 @@
 //     return 0;
 // }
 
-// // write a c program to sort elements in an array in assesding order
+// write a c program to sort elements in an array in assesding order
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// void bubbleSort(int arr[], int n) {
-//     for (int i = 0; i < n - 1; i++)
-//         for (int j = 0; j < n - i - 1; j++)
-//             if (arr[j] > arr[j + 1]) {
-//                 int temp = arr[j];
-//                 arr[j] = arr[j + 1];
-//                 arr[j + 1] = temp;
-//             }
-// }
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++)
+        for (int j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+}
 
-// int main() {
-//     int n, arr[100];
+int main() {
+    int n, arr[100];
 
-//     printf("Enter number of elements: ");
-//     scanf("%d", &n);
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
 
-//     printf("Enter elements: ");
-//     for(int i = 0; i < n; i++){
-//         scanf("%d", &arr[i]);
-//     }
-//     bubbleSort(arr, n);
-//     printf("Sorted array: ");
-//     for (int i = 0; i < n; i++){
-//         printf("%d ", arr[i]);
-//     }
-//     return 0;
-// }
+    printf("Enter elements: ");
+    for(int i = 0; i < n; i++){
+        scanf("%d", &arr[i]);
+    }
+    bubbleSort(arr, n);
+    printf("Sorted array: ");
+    for (int i = 0; i < n; i++){
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
 
 // // for descending order sorting
 // #include <stdio.h>

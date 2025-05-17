@@ -1,35 +1,35 @@
-// palindrome number
+// // palindrome number
 
-#include <stdio.h>
+// #include <stdio.h>
 
-// Function to check if a number is a palindrome
-int is_palindrome(int num) {
-    int originalNum = num, reversedNum = 0, remainder;
+// // Function to check if a number is a palindrome
+// int is_palindrome(int num) {
+//     int originalNum = num, reversedNum = 0, remainder;
     
-    // Reverse the number
-    while (num > 0) {
-        remainder = num % 10;  // Get last digit
-        reversedNum = (reversedNum * 10) + remainder;  // Build reversed number
-        num /= 10;  // Remove last digit
-    }
+//     // Reverse the number
+//     while (num > 0) {
+//         remainder = num % 10;  // Get last digit
+//         reversedNum = (reversedNum * 10) + remainder;  // Build reversed number
+//         num /= 10;  // Remove last digit
+//     }
 
-    // Check if reversed number is equal to original
-    return (originalNum == reversedNum);
-}
+//     // Check if reversed number is equal to original
+//     return (originalNum == reversedNum);
+// }
 
-int main() {
-    int num;
+// int main() {
+//     int num;
     
-    printf("Enter a number: ");
-    scanf("%d", &num);
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
 
-    if (is_palindrome(num))
-        printf("%d is a Palindrome number.\n", num);
-    else
-        printf("%d is not a Palindrome number.\n", num);
+//     if (is_palindrome(num))
+//         printf("%d is a Palindrome number.\n", num);
+//     else
+//         printf("%d is not a Palindrome number.\n", num);
 
-    return 0;
-}
+//     return 0;
+// }
 
 // armstrong number
 

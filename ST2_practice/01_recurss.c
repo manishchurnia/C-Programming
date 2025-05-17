@@ -37,7 +37,7 @@ int main(){
     return 0;
 }
 
-// fiboncci bty using loop
+// fiboncci by using loop
 #include <stdio.h>
 
 void fiboncci(int n){

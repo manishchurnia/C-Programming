@@ -1,24 +1,24 @@
-// reverse a number
+// // reverse a number
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int reversed(int n){
-    int reversed = 0, remainder;
-    while(n>0){
-        remainder = n%10; //extract last digit 
-        reversed = (reversed * 10) + remainder;  // Append it to reversed number
-        n /= 10;  // Remove last digit
-    }
-    return reversed;
-}
+// int reversed(int n){
+//     int reversed = 0, remainder;
+//     while(n>0){
+//         remainder = n%10; //extract last digit 
+//         reversed = (reversed * 10) + remainder;  // Append it to reversed number
+//         n /= 10;  // Remove last digit
+//     }
+//     return reversed;
+// }
 
-int main(){
-    int a;
-    printf("enter number to reverse: ");
-    scanf("%d", &a);
-    printf("%d", reversed(a));
-    return 0;
-}
+// int main(){
+//     int a;
+//     printf("enter number to reverse: ");
+//     scanf("%d", &a);
+//     printf("%d", reversed(a));
+//     return 0;
+// }
 
 // auto storage class 
 // #include <stdio.h>
